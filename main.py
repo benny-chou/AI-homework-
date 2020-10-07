@@ -2,6 +2,8 @@
 from math import atan, cos, sin
 from processing import *
 
+54454545
+
 WIDTH=300
 HEIGHT=300
 pacman_X = 30
