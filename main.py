@@ -6,7 +6,7 @@ WIDTH=300
 HEIGHT=300
 pacman_X = 30
 pacman_Y = 30
-delay = 2
+delay = 1
 
 ghost_X = 10
 ghost_Y = 10
@@ -14,7 +14,7 @@ ghost_Y = 10
 def setup():
     strokeWeight(3)
     frameRate(20)
-    size(300,300)
+    size(500,500)
 
 def moveGhost():    
   global ghost_X,ghost_Y,pacman_X,pacman_Y
@@ -31,7 +31,7 @@ def moveGhost():
   
   #Use this angle to calculate the velocity vector of the Ghost
   #Once again using SOH-CAH-TOA trignometic rations
-  velocity=6 #pixels per frame
+  velocity=8 #pixels per frame
   
   vx = velocity * cos(angle)
   vy = velocity * sin(angle)
@@ -41,7 +41,7 @@ def moveGhost():
   ghost_Y = ghost_Y + vy
   
   #Draw Ghost  
-  ellipse( ghost_X,ghost_Y,50,30)
+  ellipse( ghost_X,ghost_Y,60,60)
     
 def movePacman():
     global pacman_X, pacman_Y
